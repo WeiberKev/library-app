@@ -1,0 +1,161 @@
+
+
+.books-gallery {
+  padding: 2rem;
+  background-color: #f8f9fb;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 20px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-book-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.gallery-book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-cover-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.book-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.book-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 62, 80, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.book-cover-container:hover .book-overlay {
+  opacity: 1;
+}
+
+.overlay-btn {
+  margin: 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.overlay-btn.secondary {
+  background-color: #2ecc71;
+}
+
+.book-details {
+  padding: 1rem;
+}
+
+.book-details h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.book-details .author {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.book-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination-btn {
+  padding: 10px 16px;
+  border: none;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-btn.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.pagination-btn.disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}

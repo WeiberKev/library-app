@@ -1,0 +1,87 @@
+.prestamo-section {
+  padding: 2rem;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.form-table th,
+.form-table td {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.form-table th {
+  background-color: #f1f1f1;
+  border-radius: 8px 0 0 8px;
+  width: 30%;
+}
+
+.form-table td {
+  border-radius: 0 8px 8px 0;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.calcular-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.guardar-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.reservar-btn {
+  background-color: #e67e22;
+  color: white;
+}
+
+.cambiar-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.resultado-fecha {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #2c3e50;
+}
